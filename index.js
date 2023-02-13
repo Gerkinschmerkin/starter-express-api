@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/getnetworth', async (req, res) => {
     const INGAMENAME = req.query.IGN;
-    const urlNW = https://sky.shiiyu.moe/stats/${INGAMENAME};
+    const urlNW = "https://sky.shiiyu.moe/stats/${INGAMENAME}";
 
     try {
         const responseNW = await axios.get(urlNW);
